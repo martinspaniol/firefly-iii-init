@@ -1,0 +1,78 @@
+{
+    "settings": {
+        "host": "http://firefly:8080",
+        "token": "VeryLongSecretToken"
+    },
+    "accounts": {
+        "url": "/api/v1/accounts",
+        "accounts": [
+            {
+                "name": "Bank Account",
+                "type": "asset",
+                "iban": "DE01234567890123456789",
+                "bic": "ABCDEFGHIJK",
+                "account_number": "0123456789",
+                "opening_balance": "0",
+                "opening_balance_date": "2020-01-01",
+                "virtual_balance": "0",
+                "currency_code": "EUR",
+                "order": 1,
+                "account_role": "sharedAsset"
+            },
+            {
+                "name": "Credit Card Account",
+                "type": "asset",
+                "iban": "DE01234567890123456789",
+                "bic": "ABCDEFGHIJK",
+                "account_number": "0123456789",
+                "opening_balance": "0",
+                "opening_balance_date": "2020-01-01",
+                "virtual_balance": "0",
+                "currency_code": "EUR",
+                "order": 2,
+                "account_role": "ccAsset",
+                "credit_card_type": "monthlyFull",
+                "monthly_payment_date": "2020-01-01"
+            },
+            {
+                "name": "Saving Account",
+                "type": "asset",
+                "iban": "DE01234567890123456789",
+                "bic": "ABCDEFGHIJK",
+                "account_number": "0123456789",
+                "opening_balance": "0",
+                "opening_balance_date": "2020-01-01",
+                "virtual_balance": "0",
+                "currency_code": "EUR",
+                "order": 3,
+                "account_role": "savingAsset"
+            },
+            {
+                "name": "Cash",
+                "type": "asset",
+                "iban": "",
+                "bic": "",
+                "account_number": "",
+                "opening_balance": "0",
+                "opening_balance_date": "2020-01-01",
+                "virtual_balance": "0",
+                "currency_code": "EUR",
+                "order": 4,
+                "account_role": "cashWalletAsset"
+            }
+        ]
+    },
+    "categories": {
+        "url": "/api/v1/categories",
+        "categories": [
+            {
+                "name": "Category1",
+                "notes": ""
+            },
+            {
+                "name": "Category2",
+                "notes": ""
+            }
+        ]
+    }
+}

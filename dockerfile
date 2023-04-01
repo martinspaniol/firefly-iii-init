@@ -11,4 +11,9 @@ RUN apk add \
 RUN python3 -m pip install --upgrade pip
 RUN pip3 install requests
 
-VOLUME [ "/scripts" ]
+RUN mkdir -p /scripts
+COPY ./scripts /scripts
+
+VOLUME [ "/configuration" ]
+
+CMD ["python3","/scripts/init.py"]

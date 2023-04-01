@@ -47,4 +47,4 @@ class ffinit:
                 for item in innervalue:
                     r = requests.post(url, headers=self.headers, json=item)
 
-init = ffinit("/scripts/init.json")
+init = ffinit("/configuration/init.json")
