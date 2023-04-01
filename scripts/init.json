@@ -1,0 +1,337 @@
+{
+    "settings": {
+        "host": "http://firefly:8080",
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxNyIsImp0aSI6IjU3MmUzMDFkZDZhOGRmMTZkM2U3NDQ1MWUwMWVlNDViNmJmOTU3NjBmMTU1NjU1MzE4YzM1MWMzMzA4ZmM0YmYyZGU5YjYxMjI4NzRhMmI5IiwiaWF0IjoxNjczNzk2MTM1LjQxNDM2MywibmJmIjoxNjczNzk2MTM1LjQxNDM3MSwiZXhwIjoxNzA1MzMyMTMzLjQzNzc2LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.xfUhyTt6YFzFxZsa5NpeeQQAjmkBuUbK7SfVMjp4AHfCqRFQbHtrvxr6uwfgr18GADMG-_2pkpeRhOpClEg1oMRsIk8dun_GniXeyUSUBhbQWWP8CTrJNVOsZtQQI34nAzcg2xonP4bjRNp05sKbjS3J4dk-lh8mPVomHE8gdrQL3tWLgZnQ2FSPizxLLk0nR_pCviYO1JaUNWSGJpQVQ8UHfCxix0et-1i44s-UaFSIKNQX6aEjjfDT0XoyIY_PGX8A5qA0zfZVtndCoQzbr8xxqgpkNy30PgibdDwRcxnkWhPtZ_oSVKqajtDqX19qihRZR88PpijYcTZBB34YIgSW0X2uH4pRFtjq7IhuoBfG8sUBJZ64bZYEEQctgNtlTAJlFRC4tf4TZ1sgYujkNCVgbBtbcf6MlLYKVcTme-_2sCDb4tPCSVqeU6uhe2wbjqy5ajTiBxumiM5cwlUN9_hr9CVlk1vcLCgO8-oQHLftGv9j-BE53c3CmBGRkGFyMjD3mfQkp0Dtppr_ng10ZV5KVAzRKQw0O58w3vZC796mFyItdOyFa3EdzPHNr1av2cCsu7-fHljiCD8DM7iiK97smneU808hKlbNRdJavbLczshSUjpsBxk5J9JIraO27KfzlKVYABWF9wXlBhYh9yRRRhv1xnGhYqpYXImpp04"
+    },
+    "accounts": {
+        "url": "/api/v1/accounts",
+        "accounts": [
+            {
+                "name": "Comdirect - Girokonto",
+                "type": "asset",
+                "iban": "DE09200411110901837500",
+                "bic": "COBADEHDXXX",
+                "account_number": "0901837500",
+                "opening_balance": "0",
+                "opening_balance_date": "2020-01-01",
+                "virtual_balance": "0",
+                "currency_code": "EUR",
+                "order": 1,
+                "account_role": "sharedAsset"
+            },
+            {
+                "name": "Comdirect - Tagesgeld",
+                "type": "asset",
+                "iban": "DE68200411110901837505",
+                "bic": "COBADEHDXXX",
+                "account_number": "0901837505",
+                "opening_balance": "0",
+                "opening_balance_date": "2020-01-01",
+                "virtual_balance": "0",
+                "currency_code": "EUR",
+                "order": 2,
+                "account_role": "savingAsset"
+            },
+            {
+                "name": "Comdirect - Verrechnungskonto",
+                "type": "asset",
+                "iban": "DE93200411110901837540",
+                "bic": "COBADEHDXXX",
+                "account_number": "0901837540",
+                "opening_balance": "0",
+                "opening_balance_date": "2020-01-01",
+                "virtual_balance": "0",
+                "currency_code": "EUR",
+                "order": 3,
+                "account_role": "sharedAsset"
+            },
+            {
+                "name": "Barclays",
+                "type": "asset",
+                "iban": "DE36201306002013922538",
+                "bic": "BARCDEHAXXX",
+                "account_number": "2013922538",
+                "opening_balance": "0",
+                "opening_balance_date": "2020-01-01",
+                "virtual_balance": "0",
+                "currency_code": "EUR",
+                "order": 4,
+                "account_role": "ccAsset",
+                "credit_card_type": "monthlyFull",
+                "monthly_payment_date": "2020-01-01"
+            },
+            {
+                "name": "Paypal - Fabian",
+                "type": "asset",
+                "iban": "",
+                "bic": "",
+                "account_number": "",
+                "opening_balance": "0",
+                "opening_balance_date": "2020-01-01",
+                "virtual_balance": "0",
+                "currency_code": "EUR",
+                "order": 5,
+                "account_role": "ccAsset",
+                "credit_card_type": "monthlyFull",
+                "monthly_payment_date": "2020-01-01"
+            },
+            {
+                "name": "Paypal - Martin",
+                "type": "asset",
+                "iban": "",
+                "bic": "",
+                "account_number": "",
+                "opening_balance": "0",
+                "opening_balance_date": "2020-01-01",
+                "virtual_balance": "0",
+                "currency_code": "EUR",
+                "order": 6,
+                "account_role": "ccAsset",
+                "credit_card_type": "monthlyFull",
+                "monthly_payment_date": "2020-01-01"
+            },
+            {
+                "name": "TFBank - Martin",
+                "type": "asset",
+                "iban": "",
+                "bic": "NDEASESS",
+                "account_number": "104433002025856587",
+                "opening_balance": "0",
+                "opening_balance_date": "2020-01-01",
+                "virtual_balance": "0",
+                "currency_code": "EUR",
+                "order": 7,
+                "account_role": "savingAsset"
+            },
+            {
+                "name": "TFBank - Fabian",
+                "type": "asset",
+                "iban": "",
+                "bic": "NDEASESS",
+                "account_number": "104447687025991691",
+                "opening_balance": "0",
+                "opening_balance_date": "2020-01-01",
+                "virtual_balance": "0",
+                "currency_code": "EUR",
+                "order": 8,
+                "account_role": "savingAsset"
+            },
+            {
+                "name": "Revolut",
+                "type": "asset",
+                "iban": "LT083250030607703129",
+                "bic": "REVOLT21XXX",
+                "account_number": "30607703129",
+                "opening_balance": "0",
+                "opening_balance_date": "2020-01-01",
+                "virtual_balance": "0",
+                "currency_code": "EUR",
+                "order": 9,
+                "account_role": "ccAsset",
+                "credit_card_type": "monthlyFull"
+            },
+            {
+                "name": "Bargeld",
+                "type": "asset",
+                "iban": "",
+                "bic": "",
+                "account_number": "",
+                "opening_balance": "0",
+                "opening_balance_date": "2020-01-01",
+                "virtual_balance": "0",
+                "currency_code": "EUR",
+                "order": 10,
+                "account_role": "cashWalletAsset"
+            }
+        ]
+    },
+    "categories": {
+        "url": "/api/v1/categories",
+        "categories": [
+            {
+                "name": "Einnahmen aus Verkäufen",
+                "notes": ""
+            },
+            {
+                "name": "Gehalt",
+                "notes": ""
+            },
+            {
+                "name": "Zinsen / Dividenden",
+                "notes": ""
+            },
+            {
+                "name": "Steuerrückerstattungen",
+                "notes": ""
+            },
+            {
+                "name": "Bargeldeinzahlungen",
+                "notes": ""
+            },
+            {
+                "name": "Post",
+                "notes": ""
+            },
+            {
+                "name": "Telefon / Internet / Fernsehen",
+                "notes": ""
+            },
+            {
+                "name": "Abonnements",
+                "notes": ""
+            },
+            {
+                "name": "Garten",
+                "notes": ""
+            },
+            {
+                "name": "Miete",
+                "notes": ""
+            },
+            {
+                "name": "Strom / Wasser / Gas / Heizkosten",
+                "notes": ""
+            },
+            {
+                "name": "Haushaltswaren / Haushaltsgeräte",
+                "notes": ""
+            },
+            {
+                "name": "Möbel / Wohnaccessoires",
+                "notes": ""
+            },
+            {
+                "name": "Autokauf",
+                "notes": ""
+            },
+            {
+                "name": "Kraftfahrzeugsteuern",
+                "notes": ""
+            },
+            {
+                "name": "Kraftfahrzeugversicherung",
+                "notes": ""
+            },
+            {
+                "name": "Parken / Garage",
+                "notes": ""
+            },
+            {
+                "name": "Tanken",
+                "notes": ""
+            },
+            {
+                "name": "Werkstatt / Reparaturen",
+                "notes": ""
+            },
+            {
+                "name": "Fahrräder",
+                "notes": ""
+            },
+            {
+                "name": "Öffentliche Verkehrsmittel",
+                "notes": ""
+            },
+            {
+                "name": "Spielwaren",
+                "notes": ""
+            },
+            {
+                "name": "Apotheke / Medikamente",
+                "notes": ""
+            },
+            {
+                "name": "Arztbehandlung",
+                "notes": ""
+            },
+            {
+                "name": "Brille / Kontaktlinsen",
+                "notes": ""
+            },
+            {
+                "name": "Bücher / Musik / DVDs",
+                "notes": ""
+            },
+            {
+                "name": "Elektronik / Computer",
+                "notes": ""
+            },
+            {
+                "name": "Frisör",
+                "notes": ""
+            },
+            {
+                "name": "Kleidung / Schuhe",
+                "notes": ""
+            },
+            {
+                "name": "Lebensmittel / Getränke",
+                "notes": ""
+            },
+            {
+                "name": "Geschenke / Spenden",
+                "notes": ""
+            },
+            {
+                "name": "Kino / Kunst / Kultur",
+                "notes": ""
+            },
+            {
+                "name": "Sport / Fitness",
+                "notes": ""
+            },
+            {
+                "name": "Restaurants / Cafes / Bars",
+                "notes": ""
+            },
+            {
+                "name": "Hobbys",
+                "notes": ""
+            },
+            {
+                "name": "Weiterbildung",
+                "notes": ""
+            },
+            {
+                "name": "Dienstreise",
+                "notes": ""
+            },
+            {
+                "name": "Reisekosten",
+                "notes": ""
+            },
+            {
+                "name": "Bargeldauszahlung",
+                "notes": ""
+            },
+            {
+                "name": "Berufsunfähigkeitsversicherung",
+                "notes": ""
+            },
+            {
+                "name": "Haftpflichtversicherung",
+                "notes": ""
+            },
+            {
+                "name": "Rechtsschutzversicherung",
+                "notes": ""
+            },
+            {
+                "name": "Hausratversicherung",
+                "notes": ""
+            },
+            {
+                "name": "Krankenversicherung",
+                "notes": ""
+            },
+            {
+                "name": "Altersvorsorge",
+                "notes": ""
+            },
+            {
+                "name": "Geldanlage",
+                "notes": ""
+            }
+        ]
+    }
+}
