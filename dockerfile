@@ -7,10 +7,13 @@ RUN apk update --no-cache && \
 
 RUN apk add \
     python3 \
-    py3-pip
+    # py3-pip \
+    pipx
 
-RUN python3 -m pip install --upgrade pip
-RUN pip3 install requests
+# RUN python3 -m pip install --upgrade pip
+# RUN pipx upgrade pip
+# RUN pip3 install requests
+RUN pipx install requests
 
 RUN mkdir -p /scripts
 COPY ./scripts /scripts
