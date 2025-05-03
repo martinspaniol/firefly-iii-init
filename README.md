@@ -81,7 +81,7 @@ After you've create the configuration file, you can simply pull and run the cont
 ```shell
 docker run -d \
     -v /path/to/your/init.json:/configuration/init.json:ro \
-    ghcr.io/martinspaniol/firefly-iii-init:latest
+    martinspaniol/firefly-iii-init:latest
 ```
 
 ### docker-compose example
@@ -92,7 +92,7 @@ version: '3.3'
 services:
 
   ffinit:
-    image: ghcr.io/martinspaniol/firefly-iii-init:latest
+    image: martinspaniol/firefly-iii-init:latest
     networks:
       - firefly_iii
     restart: "no"
