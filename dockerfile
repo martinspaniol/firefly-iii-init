@@ -1,7 +1,3 @@
-LABEL org.opencontainers.image.source=https://github.com/martinspaniol/firefly-iii-init
-LABEL org.opencontainers.image.description="firefly-iii-init"
-LABEL org.opencontainers.image.licenses=MIT
-
 # FROM ghcr.io/linuxserver/baseimage-alpine:3.16
 FROM alpine:3.21.3
 
@@ -22,3 +18,7 @@ COPY ./scripts /scripts
 VOLUME [ "/configuration" ]
 
 CMD ["python3","/scripts/init.py"]
+
+LABEL org.opencontainers.image.source=https://github.com/martinspaniol/firefly-iii-init
+LABEL org.opencontainers.image.description="firefly-iii-init"
+LABEL org.opencontainers.image.licenses=MIT
