@@ -1,19 +1,13 @@
-# FROM ghcr.io/linuxserver/baseimage-alpine:3.16
 FROM alpine:3.21.3
-
 
 RUN apk update --no-cache && \
     apk upgrade --no-cache 
 
 RUN apk add \
     python3 \
-    # py3-pip \
     pipx
 
-# RUN python3 -m pip install --upgrade pip
-# RUN pipx upgrade pip
-# RUN pip3 install requests
-RUN pipx install requests
+RUN pipx install requests --include-deps --global 
 
 RUN mkdir -p /scripts
 COPY ./scripts /scripts
