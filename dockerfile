@@ -1,4 +1,9 @@
-FROM ghcr.io/linuxserver/baseimage-alpine:3.16
+LABEL org.opencontainers.image.source=https://github.com/martinspaniol/firefly-iii-init
+LABEL org.opencontainers.image.description="firefly-iii-init"
+LABEL org.opencontainers.image.licenses=MIT
+
+# FROM ghcr.io/linuxserver/baseimage-alpine:3.16
+FROM alpine:3.21.3
 
 
 RUN apk update --no-cache && \
