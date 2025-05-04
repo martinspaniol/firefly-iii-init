@@ -62,3 +62,4 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: martinspaniol/firefly-iii-init
           short-description: ${{ github.event.repository.description }}
+          enable-url-completion: true
